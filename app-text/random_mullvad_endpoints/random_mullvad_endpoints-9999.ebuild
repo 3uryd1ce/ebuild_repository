@@ -19,5 +19,5 @@ DEPEND="${RDEPEND}"
 BDEPEND=""
 
 src_install() {
-	dobin random_mullvad_endpoints
+	dobin random_mullvad_endpoints.py
 }
