@@ -6,8 +6,8 @@ EAPI=8
 inherit git-r3
 
 DESCRIPTION="Reads Mullvad WireGuard JSON; selects random VPN endpoints"
-HOMEPAGE="https://github.com/3uryd1ce/random_mullvad_endpoints/"
-EGIT_REPO_URI="https://github.com/3uryd1ce/random_mullvad_endpoints.git"
+HOMEPAGE="https://github.com/maybebyte/random_mullvad_endpoints/"
+EGIT_REPO_URI="https://github.com/maybebyte/random_mullvad_endpoints.git"
 LICENSE="ISC"
 
 SLOT="0"
@@ -20,4 +20,6 @@ BDEPEND=""
 
 src_install() {
 	dobin random_mullvad_endpoints.py
+	doman docs/random_mullvad_endpoints.1
+	dodoc README.md
 }
